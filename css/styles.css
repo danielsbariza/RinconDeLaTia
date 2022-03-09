@@ -2,6 +2,7 @@
     --fuenteheading: 'EB Garamond', serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --primario: #caff3a;
+    --secundario: #784d3c;
     --blanco: #ffffff;
     --negro: #000000;
     --gris: #e1e1e1;
@@ -123,7 +124,10 @@ hr {
 }
 .navegacion__enlace {
     color: var(--blanco);
-    padding: 1.5rem;
+    padding: 1rem;
+    border: var(--blanco) 0.2rem solid;
+    margin: 1rem;
+    border-radius: 4rem;
 }
 
 /* --------------------------------------------FOOTER----------------------------------------------*/
@@ -164,7 +168,11 @@ hr {
         font-size: 2rem;
     }
 }
-
+.credito {
+    background-color: var(--blanco);
+    color: var(--negro);
+    padding: 1rem;
+}
 /*----------------------------------------------PARTE INTERNA --------------------------------------------*/
 
 /* -------------------- INDEX -------------------*/
@@ -175,18 +183,29 @@ hr {
 .arepas {
     display: flex;
     margin: 2rem;
+    flex-direction: row-reverse;
 }
 .arepas__box {
-    -webkit-box-shadow: 6px 6px 30px 1px rgba(0,0,0,0.9);
-    -moz-box-shadow: 6px 6px 30px 1px rgba(0,0,0,0.9);
-    box-shadow: 6px 6px 30px 1px rgba(0,0,0,0.9);
-    background-color: var(--primario);
-    border-radius: 2rem;
+    background-color: var(--gris);
 }
 .arepas__imagen {
     height: 100%;
-    padding: 2rem;
+    height: 100%;
+    object-fit: cover;
 }
+
 .arepas__texto  {
-    margin: 5%
+    margin: 5%; 
+    color: var(--negro);
+}
+.boton {
+    margin: 2rem 0;
+}
+.entradas__boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    border: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 2rem;
 }
