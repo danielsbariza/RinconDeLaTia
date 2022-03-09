@@ -1,5 +1,5 @@
 :root {
-    --fuenteheading: 'EB Garamond', serif;
+    --fuenteheading: 'Archivo Narrow', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --primario: #caff3a;
     --secundario: #784d3c;
@@ -61,7 +61,7 @@ hr {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .header {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo2.jpg);
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,14 +189,17 @@ hr {
     background-color: var(--gris);
 }
 .arepas__imagen {
-    height: 100%;
-    height: 100%;
-    object-fit: cover;
+    flex: 1;
 }
-
 .arepas__texto  {
     margin: 5%; 
     color: var(--negro);
+    flex: 1;
+}
+.imagen {
+    height: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .boton {
     margin: 2rem 0;
