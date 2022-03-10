@@ -130,7 +130,10 @@ hr {
     margin: 1rem;
     border-radius: 4rem;
 }
-
+.seleccion {
+    color: var(--negro);
+    background-color: var(--blanco);
+}
 /* --------------------------------------------FOOTER----------------------------------------------*/
 .footer {
     background-color: var(--negro);
