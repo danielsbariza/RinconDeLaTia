@@ -306,10 +306,14 @@ hr {
 }
 
 /* -------------- PRODUCTO -------------*/
-
+@media (min-width: 768px) {
+    .producto__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 .producto__box {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 .producto__inicial {
