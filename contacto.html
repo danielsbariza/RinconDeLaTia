@@ -29,6 +29,7 @@
     <header class="header">
         <div class="contenedor header--grid">
             <div class="header__entrada">
+                <img class="logo__ph" src="img/1f951.png" alt="aguacate">
                 <a href="index.html" class="header__titulo">
                     <h1>El Rincón De La Tía</h1>
                 </a>
@@ -41,19 +42,36 @@
             </nav>
 
             <div class="header__texto">
-                <h2 class="no-margin texto-height--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea!</h2>
+                <img class="logo__pc" src="img/1f951.png" alt="aguacate">
+                <h2 class="no-margin texto-height--big">Lorem ipsum dolor sit amet consectetur.</h2>
                 <p class="no-margin texto-height--small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque?</p>
             </div>
         </div>
     </header> <!--ENCABEZADO-->
 
-    <main class="main">
-        <div class="contenedor">
-            <h2 class="centrar-texto">INCERTAR AQUI EL FORMULARIO</h2>
-            
-
-            
-        </div>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Nombre" id="nombre">
+                <!--ACCESIBILIDAD WEB-->
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="Tu Correo Electronico" id="email">
+                <!--ACCESIBILIDAD WEB-->
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+                <!--ACCESIBILIDAD WEB-->
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton entradas__boton">
+            </div>
+        </form>
     </main>
 
 

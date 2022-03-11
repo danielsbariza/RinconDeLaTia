@@ -37,6 +37,7 @@ h1 {font-size: 4.8rem;}
 h2 {font-size: 4.0rem;}
 h3 {font-size: 3.2rem;}
 h4 {font-size: 2.8rem;}
+label {font-size: 2rem;}
 
 img {
     max-width: 100%;
@@ -101,6 +102,24 @@ hr {
     font-family:var(--fuenteheading);
     font-size: 2.5rem;
 }
+@media (min-width: 768px) {
+    .logo__pc {
+        max-height: 25rem;
+    }
+    .logo__ph {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .logo__pc {
+        display: none;
+    }
+    .logo__ph {
+        max-height: 8rem;
+        margin-top: 2rem;
+    }
+}
+
 .header__texto {
     text-align: center;
     color: var(--blanco);
@@ -119,7 +138,7 @@ hr {
         font-size: 2rem;
     }
     .header__texto {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
         grid-column: 1/3;
     }
 }
@@ -185,12 +204,21 @@ hr {
     background-color: var(--blanco);
 }
 .arepas {
-    display: flex;
     margin: 2rem;
-    flex-direction: row-reverse;
 }
 .arepas__box {
     background-color: var(--gris);
+}
+@media (min-width: 768px) {
+    .arepas {
+        display: flex;
+        margin: 2rem;
+        flex-direction: row-reverse;
+    }
+    .boton {
+        display: flex;
+        margin: 2rem 0;
+    }
 }
 .arepas__imagen {
     flex: 1;
@@ -202,11 +230,12 @@ hr {
 }
 .imagen {
     height: 100%;
-    height: 100%;
     object-fit: cover;
 }
 .boton {
-    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
 }
 .entradas__boton {
     background-color: var(--secundario);
@@ -215,4 +244,58 @@ hr {
     text-transform: uppercase;
     font-size: 2rem;
     padding: 2rem;
+}
+
+/*--------------SOBRE NOSOTROS --------------*/
+@media (min-width: 768px) {
+    
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin: 2rem;
+    }
+}
+.sobre-nosotros__fondo {
+    background-color: var(--gris);
+}
+.sobre-nosotros__imagen {
+    height: 100%;
+    object-fit: cover;
+}
+.sobre-nosotros__texto {
+    padding: 1rem;
+    font-size: 2rem;
+}
+/*-------------FORMULARIO---------------*/
+
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: var(--gris);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+    /*encimar formulario a un fondo*/
+}
+.campo  {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+    height: 200px;
 }
