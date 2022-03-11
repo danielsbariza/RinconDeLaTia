@@ -88,9 +88,6 @@ hr {
         display: flex;
         justify-content: left;
     }
-    .header__titulo {
-        text-align: center;
-    }
 }
 .header__titulo {
     color: var(--blanco);
